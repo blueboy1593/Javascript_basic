@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>eventListener</title>
+</head>
+<body>
+  <h1 id="header"></h1>
+  <button id="my-button">Click me!</button>
+
+  <script>
+    // 버튼이 눌러지는 시점에 이 함수를 실행시켜줘! 라는 것
+    const button = document.querySelector('#my-button')
+    button.addEventListener('click', () => {
+      console.log('아야!')
+    })
+  </script>
+</body>
+</html>
