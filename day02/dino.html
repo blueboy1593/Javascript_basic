@@ -65,6 +65,7 @@
 
       // 이것은 문서 전체에 이벤트를 걸 예정
       document.addEventListener('keydown', event => {
+        // console.log(event)
         // 방향키를 눌렀을 때만 event 를 출력할 수 있도록 조건문을 작성
         if (event.key === 'ArrowDown') {
           console.log('아래')
@@ -93,6 +94,7 @@
       })
       dino.style.position = 'absolute'
       dino.addEventListener('mouseover', () => {
+        console.log(event)
         const newWidth = window.innerWidth * Math.random()
         const newHeight = window.innerHeight * Math.random()
         dino.style.left = newWidth + 'px'
